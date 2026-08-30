@@ -1,0 +1,49 @@
+version: '3.8'
+
+services:
+  db:
+    image: postgres:15-alpine
+    environment:
+      POSTGRES_DB: awaaz_db
+      POSTGRES_USER: awaaz_user
+      POSTGRES_PASSWORD: awaaz_secure_password_2026
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    restart: always
+
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    command: >
+      sh -c "python manage.py migrate &&
+             python manage.py seed_awaaz_data &&
+             gunicorn awaaz_backend.wsgi:application --bind 0.0.0.0:8000 --workers 3"
+    volumes:
+      - ./backend/media:/app/media
+      - ./backend/static:/app/static
+    environment:
+      - DEBUG=0
+      - SECRET_KEY=awaaz-super-secret-key-change-in-production-2026
+      - ALLOWED_HOSTS=*
+      - DATABASE_URL=postgres://awaaz_user:awaaz_secure_password_2026@db:5432/awaaz_db
+    ports:
+      - "8000:8000"
+    depends_on:
+      - db
+    restart: always
+
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+      args:
+        - VITE_API_BASE=http://localhost:8000/api/v1
+    ports:
+      - "80:80"
+    depends_on:
+      - backend
+    restart: always
+
+volumes:
+  postgres_data:

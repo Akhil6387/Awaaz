@@ -1,0 +1,110 @@
+{
+  "brand": {
+    "name": "Awaaz",
+    "tagline": "No-Login Civic Complaint & Public Accountability Layer",
+    "badge": "Public Proof Layer"
+  },
+  "nav": {
+    "feed": "Public Feed",
+    "map": "Live Map",
+    "new_complaint": "Report Problem",
+    "my_complaints": "My Tracked Issues",
+    "moderation": "Review Desk",
+    "about": "Manifesto & Safety",
+    "language": "हिंदी"
+  },
+  "hero": {
+    "title_part1": "Your Voice.",
+    "title_part2": "Live Proof.",
+    "title_part3": "Public Accountability.",
+    "subtitle": "Report civic problems in your village or city anonymously with tamper-evident live camera proof and GPS coordinates. Sits on top of official channels to build undeniable community pressure.",
+    "cta_file": "Capture & File Complaint",
+    "cta_explore": "Explore Public Complaints",
+    "stat_filed": "Complaints Active",
+    "stat_corroborations": "Citizens Corroborated",
+    "stat_resolved": "Resolved Issues"
+  },
+  "feed": {
+    "title": "Public Civic Grievances",
+    "subtitle": "Real issues reported by citizens with tamper-evident evidence",
+    "search_placeholder": "Search by locality, ward, village, or problem keyword...",
+    "all_categories": "All Categories",
+    "all_areas": "All Areas (Village / Town / City)",
+    "all_statuses": "All Statuses",
+    "sort_recent": "Most Recent",
+    "sort_cosigns": "Most Corroborated (Pressure)",
+    "switch_feed": "Card View",
+    "switch_map": "Map View",
+    "no_complaints": "No complaints found matching your filters."
+  },
+  "form": {
+    "title": "File a Civic Complaint",
+    "subtitle": "100% Anonymous by default. Live camera/microphone capture required for tamper-proof evidence.",
+    "step_media": "1. Live Evidence Capture",
+    "step_location": "2. Location & Area Type",
+    "step_details": "3. Grievance Details",
+    "step_prior": "4. Prior Escalations",
+    "step_preview": "5. Review & Publish",
+    "capture_instructions": "Live capture only: Photos, videos, and voice-notes must be taken directly via camera/mic. Gallery uploads are disabled to preserve tamper-proof evidence.",
+    "btn_take_photo": "Snap Live Photo",
+    "btn_record_video": "Record Live Video (30s)",
+    "btn_record_audio": "Record Voice Note (60s)",
+    "retake": "Retake",
+    "area_type_label": "Where is this problem located?",
+    "area_village": "Village / Gram Panchayat",
+    "area_town": "Town / Nagar Panchayat",
+    "area_city": "City / Nagar Nigam (Municipal Ward)",
+    "category_label": "Category of Problem",
+    "select_category": "Select a category...",
+    "title_label": "Summary / Title of Issue",
+    "title_placeholder": "E.g. Broken asphalt and deep waterlogged crater at market entrance",
+    "desc_label": "Detailed Description",
+    "desc_placeholder": "Explain the exact problem, how long it has persisted, and how daily life is affected (min 30 characters)...",
+    "duration_label": "Duration of Problem",
+    "people_affected_label": "Estimated People Affected",
+    "prior_label": "Have you reported this to the government before?",
+    "prior_count_label": "Number of previous complaints",
+    "prior_channel_label": "Official channel previously used",
+    "prior_ref_label": "Official Token / Reference Number (if any)",
+    "authority_name": "Responsible Authority / Sarpanch / Corporator Name",
+    "authority_desig": "Designation (e.g. Ward 45 Corporator / Sarpanch)",
+    "reveal_toggle": "Reveal your name/phone publicly? (Optional - Anonymous by default)",
+    "btn_submit": "Publish to Public Accountability Feed",
+    "btn_submitting": "Uploading & Hashing Evidence..."
+  },
+  "detail": {
+    "public_id": "Complaint Docket",
+    "cosign_btn": "I Face This Too (Co-Sign)",
+    "cosigned_badge": "You Co-Signed This",
+    "sha256_label": "Tamper-Evident Evidence Hash (SHA-256)",
+    "audit_trail": "Public Audit Trail",
+    "generate_letter": "Generate Official Escalation / RTI Letter",
+    "report_flag": "Report / Flag Issue",
+    "authority_in_charge": "Designated Authority in Charge"
+  },
+  "escalation": {
+    "title": "Official Grievance & RTI Escalation Letter",
+    "subtitle": "Ready-to-submit formal letter with verified citizen corroborations and SHA-256 evidence hashes.",
+    "copy_btn": "Copy Letter to Clipboard",
+    "print_btn": "Print / Save PDF",
+    "copied": "Copied to clipboard!"
+  },
+  "moderation": {
+    "title": "Moderation Review Desk",
+    "subtitle": "Review submitted complaints to maintain evidentiary integrity, filter hate speech, and safely verify official conduct claims.",
+    "pending_tab": "Pending Review",
+    "flagged_tab": "Community Flagged",
+    "btn_approve": "Approve & Publish",
+    "btn_reject": "Reject Submission",
+    "btn_flag": "Mark for Stricter Review",
+    "notes_placeholder": "Enter moderation reasoning..."
+  },
+  "status": {
+    "FILED": "Filed",
+    "UNDER_REVIEW": "Under Review",
+    "ACKNOWLEDGED": "Acknowledged",
+    "IN_PROGRESS": "In Progress",
+    "RESOLVED": "Resolved",
+    "CLOSED_UNRESOLVED": "Closed Unresolved"
+  }
+}
